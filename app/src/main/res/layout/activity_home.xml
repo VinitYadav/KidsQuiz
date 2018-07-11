@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.kidsquiz.activity.HomeActivity"/>
+    </data>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.HomeActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:onClick="@{()->activity.onClickButton(1)}">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="70dp"
+                    android:paddingStart="70dp"
+                    android:paddingTop="8dp"
+                    android:text="ABCD"
+                    android:textColor="@color/yellow"
+                    android:textSize="14dp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimary"
+                android:onClick="@{()->activity.onClickButton(2)}">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="70dp"
+                    android:paddingStart="70dp"
+                    android:paddingTop="8dp"
+                    android:text="1234"
+                    android:textColor="@color/yellow"
+                    android:textSize="14dp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimary"
+                android:onClick="@{()->activity.onClickButton(3)}">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="70dp"
+                    android:paddingStart="70dp"
+                    android:paddingTop="8dp"
+                    android:text="FRUITS"
+                    android:textColor="@color/yellow"
+                    android:textSize="14dp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimary"
+                android:onClick="@{()->activity.onClickButton(4)}">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="70dp"
+                    android:paddingStart="70dp"
+                    android:paddingTop="8dp"
+                    android:text="RANDOM"
+                    android:textColor="@color/yellow"
+                    android:textSize="14dp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>
